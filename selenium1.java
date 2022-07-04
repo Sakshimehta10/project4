@@ -1,5 +1,6 @@
 package com.mindtree.selenium;
 
+import java.awt.Desktop.Action;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
@@ -15,12 +16,7 @@ public class selenium1 {
 		// TODO Auto-generated method stub
 		System.setProperty("webdriver.chrome.driver","./drivers/chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
-		driver.get("https://www.amazon.com/");
-		driver.manage().window().maximize();
-		driver.findElement(By.id("twotabsearchtextbox")).sendKeys("refrigerator");
-		System.out.println(driver.getTitle());
-		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
-		driver.findElement(By.id("nav-search-submit-button")).submit();
+		driver.get("https://www.moneycontrol.com/");
 		
 			}
 			
